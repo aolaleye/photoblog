@@ -8,8 +8,9 @@ import { Entry } from '../shared/entry.model';
     styleUrls: ['entry-list.component.css']
 })
 
-export class EntryListComponent implements OnInit{
+export class EntryListComponent implements OnInit {
     entries: Entry[];
+    
     constructor(private entryService: EntryService) {
 
     }

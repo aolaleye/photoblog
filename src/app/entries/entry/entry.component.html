@@ -8,7 +8,8 @@
     <button type="button" (click)="showComments = !showComments">Comments ({{entry.comments.length}})</button>
 </div>
 <div class="comments" *ngIf="showComments">
-    <div class="thecomment" *ngFor="let comment of entry.comments">
+    <div class="comment" *ngFor="let comment of entry.comments">
         <p><strong>{{comment.name}}:</strong> {{comment.comment}}</p>
     </div>
+    <app-entry-comment-form></app-entry-comment-form>
 </div>
